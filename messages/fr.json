@@ -1,0 +1,90 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "services": "Services",
+    "about": "À Propos",
+    "contact": "Contact",
+    "seaFreight": "Fret Maritime",
+    "customsClearance": "Dédouanement",
+    "warehousing": "Entreposage",
+    "insurance": "Assurance",
+    "inlandTransport": "Transport Terrestre",
+    "logistics": "Services Logistiques"
+  },
+  "hero": {
+    "title": "DNS Fret Maritime & Services Logistiques",
+    "subtitle": "Solutions de Transport Complètes de Porte à Porte",
+    "description": "Nous fournissons des services de fret maritime, dédouanement, entreposage et transport terrestre avec les plus hauts standards de qualité et sécurité",
+    "getQuote": "Obtenir un Devis",
+    "learnMore": "En Savoir Plus"
+  },
+  "services": {
+    "title": "Nos Services",
+    "subtitle": "Nous offrons une gamme complète de services logistiques",
+    "seaFreight": {
+      "title": "Fret Maritime",
+      "description": "Services complets de fret maritime pour conteneurs complets et partagés",
+      "fcl": "Conteneur Complet (FCL)",
+      "lcl": "Groupage Maritime (LCL)",
+      "bulk": "Transport de Marchandises en Vrac",
+      "roro": "Roulier (RORO)"
+    },
+    "customs": {
+      "title": "Dédouanement",
+      "description": "Services de dédouanement rapides et précis",
+      "documents": "Préparation des documents douaniers",
+      "fees": "Paiement des droits et taxes douaniers",
+      "coordination": "Coordination avec le port et les douanes"
+    },
+    "warehousing": {
+      "title": "Entreposage",
+      "description": "Installations de stockage sûres et avancées",
+      "storage": "Stockage dans les entrepôts portuaires",
+      "cold": "Services d'entreposage frigorifique",
+      "temporary": "Stockage temporaire"
+    },
+    "insurance": {
+      "title": "Assurance Marchandises",
+      "description": "Protection complète pour vos marchandises",
+      "damage": "Assurance contre les dommages ou pertes",
+      "marine": "Assurance contre les risques maritimes"
+    },
+    "transport": {
+      "title": "Transport Terrestre",
+      "description": "Services de transport terrestre fiables",
+      "pickup": "Transport de l'usine au port",
+      "delivery": "Transport du port à l'importateur"
+    },
+    "logistics": {
+      "title": "Logistique & Support",
+      "description": "Solutions logistiques intégrées",
+      "tracking": "Suivi des expéditions",
+      "reports": "Rapports sur l'état des marchandises",
+      "doorToDoor": "Solutions de porte à porte"
+    }
+  },
+  "about": {
+    "title": "À Propos de Nous",
+    "description": "DNS Fret Maritime est une entreprise leader dans les services logistiques et de fret maritime, fournissant des solutions intégrées à nos clients dans le monde entier.",
+    "experience": "Années d'Expérience",
+    "clients": "Clients Satisfaits",
+    "shipments": "Expéditions Annuelles"
+  },
+  "contact": {
+    "title": "Contactez-Nous",
+    "subtitle": "Nous sommes là pour vous aider",
+    "address": "Adresse",
+    "phone": "Téléphone",
+    "email": "Email",
+    "name": "Nom",
+    "message": "Message",
+    "send": "Envoyer"
+  },
+  "footer": {
+    "description": "DNS Fret Maritime - Votre partenaire de confiance en services logistiques",
+    "quickLinks": "Liens Rapides",
+    "services": "Services",
+    "followUs": "Suivez-Nous",
+    "rights": "Tous droits réservés"
+  }
+}
