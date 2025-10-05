@@ -4,7 +4,7 @@ import { useLocale, useTranslations } from 'next-intl';
 import { usePathname, useRouter } from '@/i18n/navigation';
 import { useState, useRef, useEffect } from 'react';
 import { ChevronDown, Check } from 'lucide-react';
-import Flag from 'react-flagpack';
+import Flag from './Flag';
 import { locales, localeNames, localeFlags, type Locale } from '../lib/i18n';
 
 export default function LanguageSwitcher() {
