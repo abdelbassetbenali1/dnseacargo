@@ -59,6 +59,40 @@
     "title": "Our Services",
     "subtitle": "We offer a comprehensive range of logistics services",
     "viewAll": "View All Services",
+    "overview": {
+      "premiumService": "Premium Service",
+      "exploreService": "Explore Service",
+      "groundTransport": {
+        "title": "Ground Transportation",
+        "description": "Reliable door-to-door delivery services across all major cities and regions with our extensive network of professional drivers and modern fleet.",
+        "features": {
+          "tracking": "Real-time tracking",
+          "express": "Express delivery", 
+          "secure": "Secure handling",
+          "support": "24/7 customer support"
+        }
+      },
+      "oceanFreight": {
+        "title": "Ocean Freight",
+        "description": "Cost-effective shipping solutions for large cargo and international trade with comprehensive port-to-port services worldwide.",
+        "features": {
+          "container": "Container shipping",
+          "bulk": "Bulk cargo",
+          "portToPort": "Port-to-port service",
+          "customs": "Customs clearance"
+        }
+      },
+      "warehousing": {
+        "title": "Warehousing",
+        "description": "Secure storage facilities with advanced inventory management systems and climate-controlled environments for all cargo types.",
+        "features": {
+          "climate": "Climate controlled",
+          "security": "24/7 security",
+          "inventory": "Inventory tracking",
+          "distribution": "Distribution services"
+        }
+      }
+    },
     "seaFreight": {
       "title": "Sea Freight",
       "description": "Complete sea freight services for full and shared containers",

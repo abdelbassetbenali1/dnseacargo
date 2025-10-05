@@ -17,23 +17,38 @@ export default function ServicesOverview() {
     {
       icon: "/Transportation.jpg",
       image: "/Transportation.jpg",
-      title: "Ground Transportation",
-      description: "Reliable door-to-door delivery services across all major cities and regions with our extensive network of professional drivers and modern fleet.",
-      features: ["Real-time tracking", "Express delivery", "Secure handling", "24/7 customer support"]
+      title: t('services.overview.groundTransport.title'),
+      description: t('services.overview.groundTransport.description'),
+      features: [
+        t('services.overview.groundTransport.features.tracking'),
+        t('services.overview.groundTransport.features.express'),
+        t('services.overview.groundTransport.features.secure'),
+        t('services.overview.groundTransport.features.support')
+      ]
     },
     {
       icon: "/containers.svg",
       image: "/ocean.jpg", 
-      title: "Ocean Freight",
-      description: "Cost-effective shipping solutions for large cargo and international trade with comprehensive port-to-port services worldwide.",
-      features: ["Container shipping", "Bulk cargo", "Port-to-port service", "Customs clearance"]
+      title: t('services.overview.oceanFreight.title'),
+      description: t('services.overview.oceanFreight.description'),
+      features: [
+        t('services.overview.oceanFreight.features.container'),
+        t('services.overview.oceanFreight.features.bulk'),
+        t('services.overview.oceanFreight.features.portToPort'),
+        t('services.overview.oceanFreight.features.customs')
+      ]
     },
     {
       icon: "/Wearhouse.jpg",
       image: "/Wearhouse.jpg",
-      title: "Warehousing",
-      description: "Secure storage facilities with advanced inventory management systems and climate-controlled environments for all cargo types.",
-      features: ["Climate controlled", "24/7 security", "Inventory tracking", "Distribution services"]
+      title: t('services.overview.warehousing.title'),
+      description: t('services.overview.warehousing.description'),
+      features: [
+        t('services.overview.warehousing.features.climate'),
+        t('services.overview.warehousing.features.security'),
+        t('services.overview.warehousing.features.inventory'),
+        t('services.overview.warehousing.features.distribution')
+      ]
     }
   ];
 
@@ -81,7 +96,7 @@ export default function ServicesOverview() {
                           </div>
                           
                           {/* Floating Badge */}
-                          <div className="absolute -top-4 -right-4 bg-green-400 text-slate-900 px-6 py-3 rounded-full font-bold text-lg shadow-xl">
+                          <div className={`absolute -top-4 bg-green-400 text-slate-900 px-6 py-3 rounded-full font-bold text-lg shadow-xl ${isRTL ? '-left-4' : '-right-4'}`}>
                             #{String(index + 1).padStart(2, '0')}
                           </div>
                         </div>
@@ -93,7 +108,7 @@ export default function ServicesOverview() {
                           {/* Service Category */}
                           <div className="mb-6">
                             <span className="inline-block bg-green-400/20 text-green-600 px-4 py-2 rounded-full text-sm font-semibold uppercase tracking-wider border border-green-400/30">
-                              Premium Service
+                              {t('services.overview.premiumService')}
                             </span>
                           </div>
                           
@@ -123,7 +138,7 @@ export default function ServicesOverview() {
                               href="/services"
                               className="inline-flex items-center gap-4 bg-slate-900 text-white px-10 py-5 rounded-2xl font-semibold text-lg hover:bg-slate-800 transition-all duration-300 transform hover:-translate-y-1 hover:shadow-2xl"
                             >
-                              Explore Service
+                              {t('services.overview.exploreService')}
                               <svg className={`w-6 h-6 ${isRTL ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                               </svg>

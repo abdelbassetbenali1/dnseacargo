@@ -64,6 +64,40 @@
     "title": "Nos Services",
     "subtitle": "Nous offrons une gamme complète de services logistiques",
     "viewAll": "Voir Tous les Services",
+    "overview": {
+      "premiumService": "Service Premium",
+      "exploreService": "Explorer le Service",
+      "groundTransport": {
+        "title": "Transport Terrestre",
+        "description": "Services de livraison fiables de porte à porte dans toutes les villes et régions principales avec notre vaste réseau de chauffeurs professionnels et notre flotte moderne.",
+        "features": {
+          "tracking": "Suivi en temps réel",
+          "express": "Livraison express",
+          "secure": "Manipulation sécurisée",
+          "support": "Support client 24/7"
+        }
+      },
+      "oceanFreight": {
+        "title": "Fret Maritime",
+        "description": "Solutions d'expédition rentables pour les gros volumes et le commerce international avec des services complets de port à port dans le monde entier.",
+        "features": {
+          "container": "Expédition par conteneur",
+          "bulk": "Marchandises en vrac",
+          "portToPort": "Service de port à port",
+          "customs": "Dédouanement"
+        }
+      },
+      "warehousing": {
+        "title": "Entreposage",
+        "description": "Installations de stockage sécurisées avec des systèmes avancés de gestion des stocks et des environnements climatisés pour tous types de marchandises.",
+        "features": {
+          "climate": "Climatisé",
+          "security": "Sécurité 24/7",
+          "inventory": "Suivi des stocks",
+          "distribution": "Services de distribution"
+        }
+      }
+    },
     "seaFreight": {
       "title": "Fret Maritime",
       "description": "Services complets de fret maritime pour conteneurs complets et partagés",
