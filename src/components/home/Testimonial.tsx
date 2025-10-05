@@ -1,10 +1,8 @@
 "use client";
 
-import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 
 export default function Testimonial() {
-  const t = useTranslations();
 
   return (
     <section className="py-16 bg-gray-50 px-4 lg:px-8">
@@ -30,7 +28,7 @@ export default function Testimonial() {
               />
             </div>
             <blockquote className="text-lg text-gray-700 mb-6 italic">
-              "DNS Sea Cargo has been our trusted logistics partner for over 5 years. Their reliability and professional service have helped us expand our business globally."
+              &ldquo;DNS Sea Cargo has been our trusted logistics partner for over 5 years. Their reliability and professional service have helped us expand our business globally.&rdquo;
             </blockquote>
             <div className="text-gray-900 font-semibold">Ahmed Al-Rashid</div>
             <div className="text-gray-600">CEO, Global Trading Co.</div>

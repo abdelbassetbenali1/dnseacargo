@@ -10,7 +10,6 @@ import { type Locale } from '../lib/i18n';
 export default function Header() {
   const t = useTranslations('nav');
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const currentLocale = useLocale() as Locale;
 
   const navItems = [
     { key: 'home', href: '/' },

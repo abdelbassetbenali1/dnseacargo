@@ -8,7 +8,7 @@ export default function ServicesOverview() {
   const t = useTranslations();
   const locale = useLocale();
   const [currentSlide, setCurrentSlide] = useState(0);
-  const [isAutoPlaying, setIsAutoPlaying] = useState(true);
+  const [isAutoPlaying] = useState(true);
   
   // Determine if current locale is RTL
   const isRTL = locale === 'ar';

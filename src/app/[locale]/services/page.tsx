@@ -68,7 +68,7 @@ export default function ServicesPage() {
       <section className="py-16">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {services.map((service, index) => (
+            {services.map((service) => (
               <div key={service.key} className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-shadow">
                 <div className={`bg-gradient-to-r ${service.color} p-6 text-white`}>
                   <div className="flex items-center mb-4">

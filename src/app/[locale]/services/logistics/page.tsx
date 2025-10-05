@@ -1,5 +1,5 @@
 import { useTranslations } from 'next-intl';
-import { Package, Truck, BarChart3, Globe, Clock, Shield, CheckCircle, ArrowRight, Users, Target } from 'lucide-react';
+import { Package, Truck, BarChart3, Globe, Clock, Shield, CheckCircle, Users, Target } from 'lucide-react';
 
 export default function LogisticsPage() {
   const t = useTranslations();

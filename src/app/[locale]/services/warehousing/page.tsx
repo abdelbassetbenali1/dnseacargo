@@ -1,11 +1,9 @@
 'use client';
 
-import { useTranslations } from 'next-intl';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
 export default function WarehousingPage() {
-  const t = useTranslations();
   const pathname = usePathname();
   const currentLocale = pathname.split('/')[1] || 'ar';
 
