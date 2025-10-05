@@ -93,7 +93,7 @@ export default function Testimonial() {
 
                 {/* Testimonial Text */}
                 <blockquote className="text-slate-700 leading-relaxed mb-6 text-sm lg:text-base line-clamp-4">
-                  "{t(`clients.${testimonial.key}.testimonial`)}"
+                  &ldquo;{t(`clients.${testimonial.key}.testimonial`)}&rdquo;
                 </blockquote>
 
                 {/* Client Info */}
