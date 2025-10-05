@@ -1,13 +1,26 @@
-'use client';
-
-import { useTranslations } from 'next-intl';
+import { getTranslations } from 'next-intl/server';
+import { notFound } from 'next/navigation';
+import { isValidLocale } from '@/lib/i18n';
 import Link from 'next/link';
-import { usePathname } from 'next/navigation';
 
-export default function HomePage() {
-  const t = useTranslations();
-  const pathname = usePathname();
-  const currentLocale = pathname.split('/')[1] || 'ar';
+// Generate static params for all supported locales
+export async function generateStaticParams() {
+  return [
+    { locale: 'ar' },
+    { locale: 'en' },
+    { locale: 'fr' }
+  ];
+}
+
+export default async function HomePage({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  
+  // Validate locale
+  if (!isValidLocale(locale)) {
+    notFound();
+  }
+  
+  const t = await getTranslations({ locale });
 
   const services = [
     {
@@ -66,13 +79,13 @@ export default function HomePage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
-                href={`/${currentLocale}/contact`}
+                href={`/${locale}/contact`}
                 className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-3 rounded-lg font-semibold transition-colors"
               >
                 {t('hero.getQuote')}
               </Link>
               <Link
-                href={`/${currentLocale}/services`}
+                href={`/${locale}/services`}
                 className="border-2 border-white text-white hover:bg-white hover:text-blue-900 px-8 py-3 rounded-lg font-semibold transition-colors"
               >
                 {t('hero.learnMore')}
@@ -98,25 +111,25 @@ export default function HomePage() {
             {services.map((service) => (
               <div key={service.key} className="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow">
                 <div className="text-4xl mb-4">{service.icon}</div>
-                <h3 className="text-xl font-bold text-gray-800 mb-3">
+                <h3 className="text-xl font-semibold text-gray-800 mb-3">
                   {t(`services.${service.key}.title`)}
                 </h3>
                 <p className="text-gray-600 mb-4">
                   {t(`services.${service.key}.description`)}
                 </p>
-                <ul className="space-y-2">
+                <ul className="space-y-2 mb-6">
                   {service.features.map((feature) => (
-                    <li key={feature} className="flex items-center text-sm text-gray-700">
-                      <span className="w-2 h-2 bg-orange-500 rounded-full mr-3"></span>
-                      {t(`services.${service.key}.${feature}`)}
+                    <li key={feature} className="flex items-center text-sm text-gray-600">
+                      <span className="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
+                      {t(`services.${service.key}.features.${feature}`)}
                     </li>
                   ))}
                 </ul>
                 <Link
-                  href={`/${currentLocale}/services/${service.key.toLowerCase().replace(/([A-Z])/g, '-$1').toLowerCase()}`}
-                  className="inline-block mt-4 text-orange-500 hover:text-orange-600 font-semibold"
+                  href={`/${locale}/services/${service.key.toLowerCase().replace(/([A-Z])/g, '-$1').toLowerCase()}`}
+                  className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded transition-colors"
                 >
-                  {t('hero.learnMore')} →
+                  {t('common.learnMore')}
                 </Link>
               </div>
             ))}
@@ -145,37 +158,56 @@ export default function HomePage() {
       </section>
 
       {/* About Section */}
-      <section className="py-16">
+      <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
                 {t('about.title')}
               </h2>
-              <p className="text-lg text-gray-600 mb-6 leading-relaxed">
+              <p className="text-lg text-gray-600 mb-6">
                 {t('about.description')}
               </p>
+              <div className="space-y-4">
+                <div className="flex items-center">
+                  <span className="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center text-white text-sm mr-3">✓</span>
+                  <span className="text-gray-700">{t('about.features.experience')}</span>
+                </div>
+                <div className="flex items-center">
+                  <span className="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center text-white text-sm mr-3">✓</span>
+                  <span className="text-gray-700">{t('about.features.network')}</span>
+                </div>
+                <div className="flex items-center">
+                  <span className="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center text-white text-sm mr-3">✓</span>
+                  <span className="text-gray-700">{t('about.features.support')}</span>
+                </div>
+              </div>
               <Link
-                href={`/${currentLocale}/about`}
-                className="inline-block bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-lg font-semibold transition-colors"
+                href={`/${locale}/about`}
+                className="inline-block mt-6 bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold transition-colors"
               >
-                {t('hero.learnMore')}
+                {t('common.learnMore')}
               </Link>
             </div>
             <div className="relative">
               <div className="bg-gradient-to-br from-blue-500 to-blue-700 rounded-lg p-8 text-white">
-                <h3 className="text-2xl font-bold mb-4">DNS Sea Cargo</h3>
-                <p className="text-blue-100">
-                  شريكك الموثوق في الخدمات اللوجستية والشحن البحري
-                </p>
-                <div className="mt-6 grid grid-cols-2 gap-4">
+                <h3 className="text-2xl font-bold mb-4">{t('stats.title')}</h3>
+                <div className="grid grid-cols-2 gap-4">
                   <div className="text-center">
-                    <div className="text-2xl font-bold">24/7</div>
-                    <div className="text-sm text-blue-200">خدمة العملاء</div>
+                    <div className="text-3xl font-bold">500+</div>
+                    <div className="text-blue-200">{t('stats.clients')}</div>
                   </div>
                   <div className="text-center">
-                    <div className="text-2xl font-bold">100%</div>
-                    <div className="text-sm text-blue-200">ضمان الجودة</div>
+                    <div className="text-3xl font-bold">15+</div>
+                    <div className="text-blue-200">{t('stats.years')}</div>
+                  </div>
+                  <div className="text-center">
+                    <div className="text-3xl font-bold">50+</div>
+                    <div className="text-blue-200">{t('stats.countries')}</div>
+                  </div>
+                  <div className="text-center">
+                    <div className="text-3xl font-bold">24/7</div>
+                    <div className="text-blue-200">{t('stats.support')}</div>
                   </div>
                 </div>
               </div>
@@ -185,19 +217,19 @@ export default function HomePage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-orange-500 text-white">
+      <section className="py-16 bg-blue-900 text-white">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            {t('contact.title')}
+            {t('cta.title')}
           </h2>
-          <p className="text-xl mb-8 text-orange-100">
-            {t('contact.subtitle')}
+          <p className="text-xl text-blue-200 mb-8 max-w-2xl mx-auto">
+            {t('cta.description')}
           </p>
           <Link
-            href={`/${currentLocale}/contact`}
-            className="inline-block bg-white text-orange-500 hover:bg-gray-100 px-8 py-3 rounded-lg font-semibold transition-colors"
+            href={`/${locale}/contact`}
+            className="inline-block bg-orange-500 hover:bg-orange-600 text-white px-8 py-3 rounded-lg font-semibold transition-colors"
           >
-            {t('hero.getQuote')}
+            {t('cta.button')}
           </Link>
         </div>
       </section>

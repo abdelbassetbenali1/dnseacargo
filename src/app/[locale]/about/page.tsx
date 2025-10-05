@@ -1,13 +1,26 @@
-'use client';
-
-import { useTranslations } from 'next-intl';
+import { getTranslations } from 'next-intl/server';
+import { notFound } from 'next/navigation';
+import { isValidLocale } from '@/lib/i18n';
 import Link from 'next/link';
-import { usePathname } from 'next/navigation';
 
-export default function AboutPage() {
-  const t = useTranslations();
-  const pathname = usePathname();
-  const currentLocale = pathname.split('/')[1] || 'ar';
+// Generate static params for all supported locales
+export async function generateStaticParams() {
+  return [
+    { locale: 'ar' },
+    { locale: 'en' },
+    { locale: 'fr' }
+  ];
+}
+
+export default async function AboutPage({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  
+  // Validate locale
+  if (!isValidLocale(locale)) {
+    notFound();
+  }
+  
+  const t = await getTranslations({ locale });
 
   return (
     <div>
@@ -200,7 +213,7 @@ export default function AboutPage() {
             اكتشف كيف يمكننا مساعدتك في تحقيق أهدافك اللوجستية
           </p>
           <Link
-            href={`/${currentLocale}/contact`}
+            href={`/${locale}/contact`}
             className="inline-block bg-orange-500 hover:bg-orange-600 text-white px-8 py-3 rounded-lg font-semibold transition-colors"
           >
             {t('hero.getQuote')}

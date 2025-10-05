@@ -1,90 +1,175 @@
 {
+  "common": {
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "success": "Success",
+    "cancel": "Cancel",
+    "save": "Save",
+    "edit": "Edit",
+    "delete": "Delete",
+    "confirm": "Confirm",
+    "back": "Back",
+    "next": "Next",
+    "previous": "Previous",
+    "close": "Close",
+    "open": "Open",
+    "search": "Search",
+    "filter": "Filter",
+    "sort": "Sort",
+    "pageNotFound": "Page Not Found",
+    "pageNotFoundDescription": "The page you are looking for might have been removed, had its name changed, or is temporarily unavailable.",
+    "goHome": "Go to Homepage"
+  },
   "nav": {
     "home": "Home",
     "services": "Services",
     "about": "About Us",
-    "contact": "Contaact",
+    "contact": "Contact",
     "seaFreight": "Sea Freight",
     "customsClearance": "Customs Clearance",
     "warehousing": "Warehousing",
     "insurance": "Insurance",
     "inlandTransport": "Inland Transport",
-    "logistics": "Logistics Services"
+    "logistics": "Logistics Services",
+    "getQuote": "Get Quote",
+    "trackShipment": "Track Shipment"
   },
   "hero": {
     "title": "DNS Sea Cargo & Logistics Services",
     "subtitle": "Comprehensive Door-to-Door Shipping Solutions",
     "description": "We provide sea freight, customs clearance, warehousing, and inland transport services with the highest standards of quality and safety",
     "getQuote": "Get Quote",
-    "learnMore": "Learn More"
+    "learnMore": "Learn More",
+    "watchVideo": "Watch Video",
+    "yearsExperience": "Years of Experience",
+    "happyClients": "Happy Clients",
+    "shipmentsDelivered": "Shipments Delivered"
   },
   "services": {
     "title": "Our Services",
     "subtitle": "We offer a comprehensive range of logistics services",
+    "viewAll": "View All Services",
     "seaFreight": {
       "title": "Sea Freight",
       "description": "Complete sea freight services for full and shared containers",
       "fcl": "Full Container Load (FCL)",
       "lcl": "Less than Container Load (LCL)",
       "bulk": "Bulk Cargo Shipping",
-      "roro": "Roll On Roll Off (RORO)"
+      "roro": "Roll On Roll Off (RORO)",
+      "features": {
+        "global": "Global shipping network",
+        "tracking": "Real-time tracking",
+        "insurance": "Cargo insurance included",
+        "customs": "Customs clearance support"
+      }
     },
     "customs": {
       "title": "Customs Clearance",
       "description": "Fast and accurate customs clearance services",
       "documents": "Customs documentation preparation",
       "fees": "Customs duties and taxes payment",
-      "coordination": "Port and customs authority coordination"
+      "coordination": "Port and customs authority coordination",
+      "features": {
+        "expert": "Expert customs brokers",
+        "compliance": "Full regulatory compliance",
+        "speed": "Fast processing times",
+        "support": "24/7 support available"
+      }
     },
     "warehousing": {
       "title": "Warehousing",
       "description": "Safe and advanced storage facilities",
       "storage": "Port warehouse storage",
       "cold": "Cold storage services",
-      "temporary": "Temporary storage"
+      "temporary": "Temporary storage",
+      "features": {
+        "secure": "Secure facilities",
+        "climate": "Climate controlled",
+        "inventory": "Inventory management",
+        "distribution": "Distribution services"
+      }
     },
     "insurance": {
       "title": "Cargo Insurance",
       "description": "Comprehensive protection for your cargo",
       "damage": "Insurance against damage or loss",
-      "marine": "Marine risks insurance"
+      "marine": "Marine risks insurance",
+      "features": {
+        "coverage": "Comprehensive coverage",
+        "claims": "Quick claims processing",
+        "global": "Global protection",
+        "affordable": "Competitive rates"
+      }
     },
     "transport": {
       "title": "Inland Transport",
-      "description": "Reliable inland transport services",
-      "pickup": "Factory to port transport",
-      "delivery": "Port to importer transport"
-    },
-    "logistics": {
-      "title": "Logistics & Support",
-      "description": "Integrated logistics solutions",
-      "tracking": "Shipment tracking",
-      "reports": "Cargo status reports",
-      "doorToDoor": "Door-to-door solutions"
+      "description": "Reliable door-to-door delivery services",
+      "trucking": "Road freight services",
+      "lastMile": "Last mile delivery",
+      "features": {
+        "network": "Extensive network",
+        "tracking": "GPS tracking",
+        "flexible": "Flexible scheduling",
+        "reliable": "Reliable delivery"
+      }
     }
   },
   "about": {
-    "title": "About Us",
-    "description": "DNS Sea Cargo is a leading company in logistics and sea freight services, providing integrated solutions to our clients worldwide.",
-    "experience": "Years of Experience",
-    "clients": "Satisfied Clients",
-    "shipments": "Annual Shipments"
+    "title": "About DNS Sea Cargo",
+    "subtitle": "Your trusted logistics partner",
+    "description": "With years of experience in the logistics industry, DNS Sea Cargo has established itself as a leading provider of comprehensive shipping and logistics solutions.",
+    "mission": "Our Mission",
+    "missionText": "To provide reliable, efficient, and cost-effective logistics solutions that exceed our clients' expectations.",
+    "vision": "Our Vision",
+    "visionText": "To be the preferred logistics partner for businesses worldwide, known for our excellence and innovation.",
+    "values": "Our Values",
+    "valuesText": "Integrity, reliability, customer focus, and continuous improvement are the core values that drive our business.",
+    "team": "Our Team",
+    "teamText": "Our experienced team of logistics professionals is dedicated to providing exceptional service and support."
   },
   "contact": {
     "title": "Contact Us",
-    "subtitle": "We're here to help you",
+    "subtitle": "Get in touch with our team",
+    "getInTouch": "Get In Touch",
     "address": "Address",
     "phone": "Phone",
     "email": "Email",
-    "name": "Name",
-    "message": "Message",
-    "send": "Send"
+    "hours": "Business Hours",
+    "form": {
+      "name": "Full Name",
+      "email": "Email Address",
+      "phone": "Phone Number",
+      "company": "Company Name",
+      "service": "Service Interested In",
+      "message": "Message",
+      "send": "Send Message",
+      "sending": "Sending...",
+      "success": "Message sent successfully!",
+      "error": "Failed to send message. Please try again."
+    },
+    "info": {
+      "address": "123 Port Street, Maritime District, City 12345",
+      "phone": "+1 (555) 123-4567",
+      "email": "info@dnseacargo.com",
+      "hours": "Monday - Friday: 8:00 AM - 6:00 PM"
+    }
   },
   "footer": {
-    "description": "DNS Sea Cargo - Your trusted partner in logistics services",
+    "description": "DNS Sea Cargo provides comprehensive logistics solutions with the highest standards of quality and reliability.",
     "quickLinks": "Quick Links",
     "services": "Services",
+    "contact": "Contact Info",
     "followUs": "Follow Us",
-    "rights": "All rights reserved"
+    "newsletter": "Newsletter",
+    "newsletterText": "Subscribe to our newsletter for updates and industry insights",
+    "subscribe": "Subscribe",
+    "copyright": "© 2024 DNS Sea Cargo. All rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service"
+  },
+  "language": {
+    "switch": "Switch Language",
+    "current": "Current Language",
+    "available": "Available Languages"
   }
 }

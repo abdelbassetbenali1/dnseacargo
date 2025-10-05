@@ -1,22 +1,16 @@
 'use client';
 
 import { useTranslations, useLocale } from 'next-intl';
-import { usePathname, useRouter } from 'next/navigation';
 import Link from 'next/link';
 import { useState } from 'react';
+import { Menu, X } from 'lucide-react';
+import LanguageSwitcher from './LanguageSwitcher';
+import { type Locale } from '../lib/i18n';
 
 export default function Header() {
   const t = useTranslations('nav');
-  const pathname = usePathname();
-  const router = useRouter();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-  const currentLocale = useLocale();
-
-  const switchLocale = (locale: string) => {
-    const newPath = pathname.replace(`/${currentLocale}`, `/${locale}`);
-    router.push(newPath);
-  };
+  const currentLocale = useLocale() as Locale;
 
   const navItems = [
     { key: 'home', href: `/${currentLocale}` },
@@ -43,68 +37,72 @@ export default function Header() {
               <Link
                 key={item.key}
                 href={item.href}
-                className="text-gray-700 hover:text-orange-500 font-medium transition-colors"
+                className="text-gray-700 hover:text-orange-500 font-medium transition-colors duration-200"
               >
                 {t(item.key)}
               </Link>
             ))}
           </nav>
 
-          {/* Language Switcher & Mobile Menu Button */}
+          {/* Right Side - Language Switcher & Mobile Menu Button */}
           <div className="flex items-center space-x-4">
-            {/* Language Switcher */}
-            <div className="flex items-center space-x-2">
-              <button
-                onClick={() => switchLocale('ar')}
-                className={`px-2 py-1 rounded ${
-                  currentLocale === 'ar' ? 'bg-orange-500 text-white' : 'text-gray-600 hover:text-orange-500'
-                }`}
-              >
-                العربية
-              </button>
-              <button
-                onClick={() => switchLocale('en')}
-                className={`px-2 py-1 rounded ${
-                  currentLocale === 'en' ? 'bg-orange-500 text-white' : 'text-gray-600 hover:text-orange-500'
-                }`}
-              >
-                EN
-              </button>
-              <button
-                onClick={() => switchLocale('fr')}
-                className={`px-2 py-1 rounded ${
-                  currentLocale === 'fr' ? 'bg-orange-500 text-white' : 'text-gray-600 hover:text-orange-500'
-                }`}
-              >
-                FR
-              </button>
+            {/* Language Switcher - Hidden on mobile, shown on desktop */}
+            <div className="hidden md:block">
+              <LanguageSwitcher />
             </div>
+
+            {/* Get Quote Button - Hidden on mobile */}
+            <Link
+              href={`/${currentLocale}/contact`}
+              className="hidden md:inline-flex items-center px-4 py-2 bg-orange-500 text-white font-medium rounded-lg hover:bg-orange-600 transition-colors duration-200"
+            >
+              {t('getQuote')}
+            </Link>
 
             {/* Mobile Menu Button */}
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="md:hidden p-2"
+              className="md:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors duration-200"
+              aria-label="Toggle menu"
             >
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-              </svg>
+              {isMenuOpen ? (
+                <X className="w-6 h-6 text-gray-600" />
+              ) : (
+                <Menu className="w-6 h-6 text-gray-600" />
+              )}
             </button>
           </div>
         </div>
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="md:hidden py-4 border-t">
-            {navItems.map((item) => (
+          <div className="md:hidden py-4 border-t border-gray-100">
+            <nav className="space-y-2">
+              {navItems.map((item) => (
+                <Link
+                  key={item.key}
+                  href={item.href}
+                  className="block py-3 px-2 text-gray-700 hover:text-orange-500 hover:bg-orange-50 rounded-lg font-medium transition-all duration-200"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  {t(item.key)}
+                </Link>
+              ))}
+            </nav>
+            
+            {/* Mobile Language Switcher & Get Quote */}
+            <div className="mt-4 pt-4 border-t border-gray-100 space-y-3">
+              <div className="px-2">
+                <LanguageSwitcher />
+              </div>
               <Link
-                key={item.key}
-                href={item.href}
-                className="block py-2 text-gray-700 hover:text-orange-500 font-medium"
+                href={`/${currentLocale}/contact`}
+                className="block w-full text-center py-3 px-4 bg-orange-500 text-white font-medium rounded-lg hover:bg-orange-600 transition-colors duration-200"
                 onClick={() => setIsMenuOpen(false)}
               >
-                {t(item.key)}
+                {t('getQuote')}
               </Link>
-            ))}
+            </div>
           </div>
         )}
       </div>
