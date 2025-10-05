@@ -19,7 +19,11 @@
     "export": "Exporter",
     "import": "Importer",
     "print": "Imprimer",
-    "share": "Partager"
+    "share": "Partager",
+    "pageNotFound": "Page non trouvée",
+    "pageNotFoundDescription": "La page que vous recherchez a peut-être été supprimée, renommée ou est temporairement indisponible.",
+    "goHome": "Retour à l'accueil",
+    "learnMore": "En savoir plus"
   },
   "nav": {
     "home": "Accueil",
@@ -44,8 +48,18 @@
     "watchVideo": "Regarder la Vidéo",
     "yearsExperience": "Années d'Expérience",
     "happyClients": "Clients Satisfaits",
-    "shipmentsDelivered": "Expéditions Livrées"
+    "shipmentsDelivered": "Expéditions Livrées",
+    "servicesBadge": "NOS SERVICES",
+    "mainTitle": "Solutions d'Expédition Complètes",
+    "mainDescription": "Des livraisons locales au fret international, nous fournissons des solutions d'expédition de bout en bout conçues pour la fiabilité et la tranquillité d'esprit. Chaque expédition comprend :",
+    "trackingTitle": "Suivi d'Expédition",
+    "trackingDescription": "Suivez votre expédition partout",
+    "insuranceTitle": "Couverture d'Assurance",
+    "insuranceDescription": "Ne vous inquiétez pas pour votre colis",
+    "ctaTitle": "Planifiez Plus Intelligemment avec des Estimations d'Expédition Instantanées",
+    "ctaButton": "Calculer Maintenant"
   },
+   
   "services": {
     "title": "Nos Services",
     "subtitle": "Nous offrons une gamme complète de services logistiques",
@@ -61,7 +75,11 @@
         "global": "Réseau de transport mondial",
         "tracking": "Suivi en temps réel",
         "insurance": "Assurance cargo incluse",
-        "customs": "Support dédouanement"
+        "customs": "Support dédouanement",
+        "fcl": "Conteneur complet",
+        "lcl": "Groupage maritime",
+        "bulk": "Marchandises en vrac",
+        "roro": "Transport roulier"
       }
     },
     "customs": {
@@ -74,7 +92,10 @@
         "expert": "Courtiers en douane experts",
         "compliance": "Conformité réglementaire complète",
         "speed": "Temps de traitement rapides",
-        "support": "Support 24/7 disponible"
+        "support": "Support 24/7 disponible",
+        "documents": "Préparation des documents douaniers",
+        "fees": "Paiement des droits et taxes",
+        "coordination": "Coordination avec les autorités"
       }
     },
     "warehousing": {
@@ -87,7 +108,10 @@
         "secure": "Installations sécurisées",
         "climate": "Contrôle climatique",
         "inventory": "Gestion des stocks",
-        "distribution": "Services de distribution"
+        "distribution": "Services de distribution",
+        "storage": "Stockage sécurisé des marchandises",
+        "cold": "Stockage frigorifique",
+        "temporary": "Stockage temporaire"
       }
     },
     "insurance": {
@@ -99,7 +123,9 @@
         "coverage": "Couverture complète",
         "claims": "Traitement rapide des réclamations",
         "global": "Protection mondiale",
-        "affordable": "Tarifs compétitifs"
+        "affordable": "Tarifs compétitifs",
+        "damage": "Assurance contre les dommages",
+        "marine": "Assurance contre les risques maritimes"
       }
     },
     "transport": {
@@ -107,11 +133,27 @@
       "description": "Services de livraison fiables de porte à porte",
       "trucking": "Services de fret routier",
       "lastMile": "Livraison du dernier kilomètre",
+      "pickup": "Service de collecte",
+      "delivery": "Service de livraison",
       "features": {
         "network": "Réseau étendu",
         "tracking": "Suivi GPS",
         "flexible": "Planification flexible",
-        "reliable": "Livraison fiable"
+        "reliable": "Livraison fiable",
+        "pickup": "Collecte sur site",
+        "delivery": "Livraison à destination"
+      }
+    },
+    "logistics": {
+      "title": "Services Logistiques",
+      "description": "Solutions logistiques intégrées et gestion de la chaîne d'approvisionnement",
+      "tracking": "Suivi des expéditions",
+      "reports": "Rapports et analyses",
+      "doorToDoor": "Service de porte à porte",
+      "features": {
+        "tracking": "Suivi des expéditions en temps réel",
+        "reports": "Rapports détaillés et analyses",
+        "doorToDoor": "Service complet de porte à porte"
       }
     }
   },
@@ -126,7 +168,15 @@
     "values": "Nos Valeurs",
     "valuesText": "L'intégrité, la fiabilité, l'orientation client et l'amélioration continue sont les valeurs fondamentales qui guident notre entreprise.",
     "team": "Notre Équipe",
-    "teamText": "Notre équipe expérimentée de professionnels de la logistique se consacre à fournir un service et un support exceptionnels."
+    "teamText": "Notre équipe expérimentée de professionnels de la logistique se consacre à fournir un service et un support exceptionnels.",
+    "experience": "Années d'expérience",
+    "clients": "Clients satisfaits",
+    "shipments": "Expéditions livrées",
+    "features": {
+      "experience": "Vaste expérience de l'industrie",
+      "network": "Réseau mondial de partenaires",
+      "support": "Support client 24/7"
+    }
   },
   "contact": {
     "title": "Contactez-Nous",
@@ -153,20 +203,69 @@
       "phone": "+1 (555) 123-4567",
       "email": "info@dnseacargo.com",
       "hours": "Lundi - Vendredi : 8h00 - 18h00"
+    },
+    "logistics": {
+      "title": "Services Logistiques",
+      "description": "Solutions logistiques intégrées et gestion de la chaîne d'approvisionnement",
+      "tracking": "Suivi des expéditions",
+      "reports": "Rapports et analyses",
+      "doorToDoor": "Service de porte à porte",
+      "features": {
+        "tracking": "Suivi des expéditions en temps réel",
+        "reports": "Rapports détaillés et analyses",
+        "doorToDoor": "Service complet de porte à porte"
+      }
     }
   },
   "footer": {
-    "description": "DNS Fret Maritime fournit des solutions logistiques complètes avec les plus hauts standards de qualité et de fiabilité.",
-    "quickLinks": "Liens Rapides",
-    "services": "Services",
-    "contact": "Informations de Contact",
-    "followUs": "Suivez-Nous",
-    "newsletter": "Newsletter",
-    "newsletterText": "Abonnez-vous à notre newsletter pour les mises à jour et les insights de l'industrie",
-    "subscribe": "S'abonner",
-    "copyright": "© 2024 DNS Fret Maritime. Tous droits réservés.",
-    "privacy": "Politique de Confidentialité",
-    "terms": "Conditions de Service"
+    "company": {
+      "title": "Entreprise",
+      "aboutUs": "À propos de nous",
+      "ourTeam": "Notre équipe",
+      "contact": "Contact"
+    },
+    "services": {
+      "title": "Services",
+      "worldwideShipping": "Expédition mondiale",
+      "seaShipping": "Transport maritime",
+      "groundShipping": "Transport terrestre"
+    },
+    "shipping": {
+      "title": "Expédition",
+      "trackPackages": "Suivre les colis",
+      "calculateFare": "Calculer le tarif"
+    },
+    "support": {
+      "title": "Support",
+      "customerCare": "Service client",
+      "insuranceClaim": "Réclamation d'assurance"
+    },
+    "news": {
+      "title": "Actualités",
+      "pressRelease": "Communiqué de presse",
+      "ourBlog": "Notre blog"
+    },
+    "bottom": {
+      "copyright": "Copyright © Uthao 2025 | Tous droits réservés",
+      "readyToShip": "Prêt à expédier plus intelligemment ?",
+      "contactUs": "Contactez-nous",
+      "termsOfUse": "Conditions d'utilisation",
+      "privacy": "Confidentialité",
+      "email": "info@uthao.com"
+    }
+  },
+  "stats": {
+    "title": "Nos Réalisations",
+    "description": "Approuvé par les entreprises du monde entier pour des solutions de transport fiables",
+    "clients": "Clients Satisfaits",
+    "years": "Années d'Expérience",
+    "countries": "Pays Desservis",
+    "support": "Support 24/7"
+  },
+  "cta": {
+    "title": "Prêt à commencer ?",
+    "description": "Obtenez un devis personnalisé pour vos besoins logistiques dès aujourd'hui",
+    "button": "Obtenir un devis"
   },
   "language": {
     "switch": "Changer de Langue",

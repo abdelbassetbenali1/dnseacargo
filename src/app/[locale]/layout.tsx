@@ -3,18 +3,22 @@ import { getMessages } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import { Geist, Geist_Mono } from "next/font/google";
+import { Alexandria, Inter } from "next/font/google";
 import { isValidLocale, getLocaleDirection } from '@/lib/i18n';
 import "../globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+// Inter as Zalando Sans alternative for English and French
+const inter = Inter({
+  variable: "--font-inter",
   subsets: ["latin"],
+  display: 'swap',
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+// Alexandria for Arabic
+const alexandria = Alexandria({
+  variable: "--font-alexandria",
+  subsets: ["latin", "arabic"],
+  display: 'swap',
 });
 
 // Generate static params for all supported locales
@@ -45,7 +49,7 @@ export default async function LocaleLayout({
 
   return (
     <html lang={locale} dir={direction}>
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+      <body className={`${locale === 'ar' ? `${alexandria.variable} ${alexandria.className}` : `${inter.variable} ${inter.className}`} antialiased`}>
         <NextIntlClientProvider messages={messages}>
           <div className="min-h-screen flex flex-col">
             <Header />

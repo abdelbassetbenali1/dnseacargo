@@ -1,9 +1,10 @@
 'use client';
 
 import { useLocale, useTranslations } from 'next-intl';
-import { usePathname, useRouter } from 'next/navigation';
+import { usePathname, useRouter } from '@/i18n/navigation';
 import { useState, useRef, useEffect } from 'react';
-import { ChevronDown, Globe, Check } from 'lucide-react';
+import { ChevronDown, Check } from 'lucide-react';
+import Flag from 'react-flagpack';
 import { locales, localeNames, localeFlags, type Locale } from '../lib/i18n';
 
 export default function LanguageSwitcher() {
@@ -15,8 +16,7 @@ export default function LanguageSwitcher() {
   const dropdownRef = useRef<HTMLDivElement>(null);
 
   const switchLocale = (locale: Locale) => {
-    const newPath = pathname.replace(`/${currentLocale}`, `/${locale}`);
-    router.push(newPath);
+    router.replace(pathname, { locale });
     setIsOpen(false);
   };
 
@@ -41,9 +41,9 @@ export default function LanguageSwitcher() {
         aria-expanded={isOpen}
         aria-haspopup="listbox"
       >
-        <Globe className="w-4 h-4 text-gray-600" />
-        <span className="text-sm font-medium text-gray-700">
-          {localeFlags[currentLocale]} {localeNames[currentLocale]}
+        <span className="text-sm font-medium text-gray-700 flex items-center space-x-2">
+          <Flag code={localeFlags[currentLocale]} size="s" />
+          <span>{localeNames[currentLocale]}</span>
         </span>
         <ChevronDown 
           className={`w-4 h-4 text-gray-500 transition-transform duration-200 ${
@@ -68,7 +68,7 @@ export default function LanguageSwitcher() {
               aria-selected={currentLocale === locale}
             >
               <div className="flex items-center space-x-3">
-                <span className="text-lg">{localeFlags[locale]}</span>
+                <Flag code={localeFlags[locale]} size="s" />
                 <span className="font-medium">{localeNames[locale]}</span>
               </div>
               {currentLocale === locale && (

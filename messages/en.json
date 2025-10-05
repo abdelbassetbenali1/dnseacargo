@@ -18,7 +18,8 @@
     "sort": "Sort",
     "pageNotFound": "Page Not Found",
     "pageNotFoundDescription": "The page you are looking for might have been removed, had its name changed, or is temporarily unavailable.",
-    "goHome": "Go to Homepage"
+    "goHome": "Go to Homepage",
+    "learnMore": "Learn More"
   },
   "nav": {
     "home": "Home",
@@ -43,7 +44,16 @@
     "watchVideo": "Watch Video",
     "yearsExperience": "Years of Experience",
     "happyClients": "Happy Clients",
-    "shipmentsDelivered": "Shipments Delivered"
+    "shipmentsDelivered": "Shipments Delivered",
+    "servicesBadge": "OUR SERVICES",
+    "mainTitle": "Comprehensive Shipment Solutions",
+    "mainDescription": "From local deliveries to international freight, ShipMate provides end-to-end shipping solutions designed for reliability and peace of mind. Every shipment includes:",
+    "trackingTitle": "Shipment Tracking",
+    "trackingDescription": "Track your shipment anywhere",
+    "insuranceTitle": "Insurance Coverage",
+    "insuranceDescription": "Don't need to worry about your package",
+    "ctaTitle": "Plan Smarter with Instant Shipping Estimates",
+    "ctaButton": "Calculate Now"
   },
   "services": {
     "title": "Our Services",
@@ -60,7 +70,11 @@
         "global": "Global shipping network",
         "tracking": "Real-time tracking",
         "insurance": "Cargo insurance included",
-        "customs": "Customs clearance support"
+        "customs": "Customs clearance support",
+        "fcl": "Full Container Load services",
+        "lcl": "Less than Container Load services",
+        "bulk": "Bulk cargo handling",
+        "roro": "Roll-on/Roll-off services"
       }
     },
     "customs": {
@@ -73,7 +87,10 @@
         "expert": "Expert customs brokers",
         "compliance": "Full regulatory compliance",
         "speed": "Fast processing times",
-        "support": "24/7 support available"
+        "support": "24/7 support available",
+        "documents": "Documentation preparation",
+        "fees": "Duties and taxes handling",
+        "coordination": "Authority coordination"
       }
     },
     "warehousing": {
@@ -86,7 +103,10 @@
         "secure": "Secure facilities",
         "climate": "Climate controlled",
         "inventory": "Inventory management",
-        "distribution": "Distribution services"
+        "distribution": "Distribution services",
+        "storage": "Secure storage solutions",
+        "cold": "Cold storage facilities",
+        "temporary": "Temporary storage options"
       }
     },
     "insurance": {
@@ -98,7 +118,9 @@
         "coverage": "Comprehensive coverage",
         "claims": "Quick claims processing",
         "global": "Global protection",
-        "affordable": "Competitive rates"
+        "affordable": "Competitive rates",
+        "damage": "Damage protection",
+        "marine": "Marine insurance coverage"
       }
     },
     "transport": {
@@ -110,7 +132,18 @@
         "network": "Extensive network",
         "tracking": "GPS tracking",
         "flexible": "Flexible scheduling",
-        "reliable": "Reliable delivery"
+        "reliable": "Reliable delivery",
+        "pickup": "Pickup services",
+        "delivery": "Delivery services"
+      }
+    },
+    "logistics": {
+      "title": "Logistics Services",
+      "description": "Comprehensive logistics management solutions",
+      "features": {
+        "tracking": "Real-time tracking",
+        "reports": "Detailed reporting",
+        "doorToDoor": "Door-to-door service"
       }
     }
   },
@@ -125,7 +158,28 @@
     "values": "Our Values",
     "valuesText": "Integrity, reliability, customer focus, and continuous improvement are the core values that drive our business.",
     "team": "Our Team",
-    "teamText": "Our experienced team of logistics professionals is dedicated to providing exceptional service and support."
+    "teamText": "Our experienced team of logistics professionals is dedicated to providing exceptional service and support.",
+    "experience": "Years of Experience",
+    "clients": "Happy Clients",
+    "shipments": "Shipments Delivered",
+    "features": {
+      "experience": "Decades of industry experience",
+      "network": "Global logistics network",
+      "support": "24/7 customer support"
+    }
+  },
+  "stats": {
+    "title": "Our Achievements",
+    "description": "Trusted by businesses worldwide for reliable shipping solutions",
+    "clients": "Happy Clients",
+    "years": "Years of Experience",
+    "countries": "Countries Served",
+    "support": "24/7 Support"
+  },
+  "cta": {
+    "title": "Ready to Ship Your Cargo?",
+    "description": "Get a free quote today and experience our professional logistics services",
+    "button": "Get Free Quote"
   },
   "contact": {
     "title": "Contact Us",
@@ -155,17 +209,41 @@
     }
   },
   "footer": {
-    "description": "DNS Sea Cargo provides comprehensive logistics solutions with the highest standards of quality and reliability.",
-    "quickLinks": "Quick Links",
-    "services": "Services",
-    "contact": "Contact Info",
-    "followUs": "Follow Us",
-    "newsletter": "Newsletter",
-    "newsletterText": "Subscribe to our newsletter for updates and industry insights",
-    "subscribe": "Subscribe",
-    "copyright": "© 2024 DNS Sea Cargo. All rights reserved.",
-    "privacy": "Privacy Policy",
-    "terms": "Terms of Service"
+    "company": {
+      "title": "Company",
+      "aboutUs": "About us",
+      "ourTeam": "Our team",
+      "contact": "Contact"
+    },
+    "services": {
+      "title": "Services",
+      "worldwideShipping": "Worldwide shipping",
+      "seaShipping": "Sea shipping",
+      "groundShipping": "Ground shipping"
+    },
+    "shipping": {
+      "title": "Shipping",
+      "trackPackages": "Track Packages",
+      "calculateFare": "Calculate Fare"
+    },
+    "support": {
+      "title": "Support",
+      "customerCare": "Customer care",
+      "insuranceClaim": "Insurance Claim"
+    },
+    "news": {
+      "title": "News",
+      "pressRelease": "Press Release",
+      "ourBlog": "Our Blog"
+    },
+    "bottom": {
+      "copyright": "Copyright © Uthao 2025 | All Rights Reserved",
+      "readyToShip": "Ready to ship smarter?",
+      "contactUs": "Contact Us",
+      "termsOfUse": "Terms of Use",
+      "privacy": "Privacy",
+      "email": "info@uthao.com"
+    }
   },
   "language": {
     "switch": "Switch Language",

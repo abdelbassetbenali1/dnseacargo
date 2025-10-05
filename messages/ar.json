@@ -48,8 +48,18 @@
     "watchVideo": "شاهد الفيديو",
     "yearsExperience": "سنوات من الخبرة",
     "happyClients": "عميل راضٍ",
-    "shipmentsDelivered": "شحنة تم تسليمها"
+    "shipmentsDelivered": "شحنة مُسلمة",
+    "servicesBadge": "خدماتنا",
+    "mainTitle": "حلول شحن شاملة",
+    "mainDescription": "من التوصيل المحلي إلى الشحن الدولي، تقدم شركتنا حلول شحن متكاملة مصممة للموثوقية وراحة البال. كل شحنة تشمل:",
+    "trackingTitle": "تتبع الشحنة",
+    "trackingDescription": "تتبع شحنتك في أي مكان",
+    "insuranceTitle": "التغطية التأمينية",
+    "insuranceDescription": "لا تقلق بشأن طردك",
+    "ctaTitle": "خطط بذكاء مع تقديرات الشحن الفورية",
+    "ctaButton": "احسب الآن"
   },
+  
   "services": {
     "title": "خدماتنا",
     "subtitle": "نقدم مجموعة شاملة من الخدمات اللوجستية",
@@ -196,24 +206,49 @@
     }
   },
   "footer": {
-    "description": "تقدم شركة DNS للشحن البحري حلول لوجستية شاملة بأعلى معايير الجودة والموثوقية.",
-    "quickLinks": "روابط سريعة",
-    "services": "الخدمات",
-    "contact": "معلومات الاتصال",
-    "followUs": "تابعنا",
-    "newsletter": "النشرة الإخبارية",
-    "newsletterText": "اشترك في نشرتنا الإخبارية للحصول على التحديثات ورؤى الصناعة",
-    "subscribe": "اشتراك",
-    "copyright": "© 2024 شركة DNS للشحن البحري. جميع الحقوق محفوظة.",
-    "privacy": "سياسة الخصوصية",
-    "terms": "شروط الخدمة"
+    "company": {
+      "title": "الشركة",
+      "aboutUs": "من نحن",
+      "ourTeam": "فريقنا",
+      "contact": "اتصل بنا"
+    },
+    "services": {
+      "title": "الخدمات",
+      "worldwideShipping": "الشحن العالمي",
+      "seaShipping": "الشحن البحري",
+      "groundShipping": "الشحن البري"
+    },
+    "shipping": {
+      "title": "الشحن",
+      "trackPackages": "تتبع الطرود",
+      "calculateFare": "حساب التكلفة"
+    },
+    "support": {
+      "title": "الدعم",
+      "customerCare": "خدمة العملاء",
+      "insuranceClaim": "مطالبة التأمين"
+    },
+    "news": {
+      "title": "الأخبار",
+      "pressRelease": "البيان الصحفي",
+      "ourBlog": "مدونتنا"
+    },
+    "bottom": {
+      "copyright": "حقوق الطبع والنشر © أوثاو 2025 | جميع الحقوق محفوظة",
+      "readyToShip": "هل أنت مستعد للشحن بذكاء؟",
+      "contactUs": "اتصل بنا",
+      "termsOfUse": "شروط الاستخدام",
+      "privacy": "الخصوصية",
+      "email": "info@uthao.com"
+    }
   },
   "stats": {
-    "title": "إحصائياتنا",
-    "clients": "عملاء راضون",
-    "years": "سنوات خبرة",
-    "countries": "دولة",
-    "support": "دعم"
+    "title": "إنجازاتنا",
+    "description": "موثوق به من قبل الشركات في جميع أنحاء العالم لحلول الشحن الموثوقة",
+    "clients": "العملاء السعداء",
+    "years": "سنوات الخبرة",
+    "countries": "البلدان المخدومة",
+    "support": "دعم 24/7"
   },
   "cta": {
     "title": "هل أنت مستعد للبدء؟",

@@ -1,7 +1,7 @@
 'use client';
 
 import { useTranslations, useLocale } from 'next-intl';
-import Link from 'next/link';
+import { Link } from '@/i18n/navigation';
 import { useState } from 'react';
 import { Menu, X } from 'lucide-react';
 import LanguageSwitcher from './LanguageSwitcher';
@@ -13,31 +13,31 @@ export default function Header() {
   const currentLocale = useLocale() as Locale;
 
   const navItems = [
-    { key: 'home', href: `/${currentLocale}` },
-    { key: 'services', href: `/${currentLocale}/services` },
-    { key: 'about', href: `/${currentLocale}/about` },
-    { key: 'contact', href: `/${currentLocale}/contact` },
+    { key: 'home', href: '/' },
+    { key: 'services', href: '/services' },
+    { key: 'about', href: '/about' },
+    { key: 'contact', href: '/contact' },
   ];
 
   return (
-    <header className="bg-white shadow-lg sticky top-0 z-50">
-      <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-16">
+    <header className="bg-gray-50 sticky top-0 z-50 border-b border-gray-100">
+      <div className="max-w-7xl mx-auto px-4 lg:px-8">
+        <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <Link href={`/${currentLocale}`} className="flex items-center space-x-2">
-            <div className="w-10 h-10 bg-orange-500 rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-xl">DNS</span>
+          <Link href="/" className="flex items-center space-x-3">
+            <div className="w-12 h-12 bg-slate-800 rounded-xl flex items-center justify-center">
+              <span className="text-white font-bold text-lg">DNS</span>
             </div>
-            <span className="text-xl font-bold text-gray-800">Sea Cargo</span>
+            <span className="text-2xl font-bold text-slate-800">Sea Cargo</span>
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-8">
+          <nav className="hidden md:flex items-center space-x-10">
             {navItems.map((item) => (
               <Link
                 key={item.key}
                 href={item.href}
-                className="text-gray-700 hover:text-orange-500 font-medium transition-colors duration-200"
+                className="text-slate-700 hover:text-slate-900 font-medium text-lg transition-colors duration-200"
               >
                 {t(item.key)}
               </Link>
@@ -45,7 +45,7 @@ export default function Header() {
           </nav>
 
           {/* Right Side - Language Switcher & Mobile Menu Button */}
-          <div className="flex items-center space-x-4">
+          <div className="flex items-center space-x-6">
             {/* Language Switcher - Hidden on mobile, shown on desktop */}
             <div className="hidden md:block">
               <LanguageSwitcher />
@@ -53,8 +53,8 @@ export default function Header() {
 
             {/* Get Quote Button - Hidden on mobile */}
             <Link
-              href={`/${currentLocale}/contact`}
-              className="hidden md:inline-flex items-center px-4 py-2 bg-orange-500 text-white font-medium rounded-lg hover:bg-orange-600 transition-colors duration-200"
+              href="/contact"
+              className="hidden md:inline-flex items-center px-6 py-3 bg-green-500 text-white font-semibold rounded-xl hover:bg-green-600 transition-all duration-200 shadow-md hover:shadow-lg"
             >
               {t('getQuote')}
             </Link>
@@ -76,13 +76,13 @@ export default function Header() {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="md:hidden py-4 border-t border-gray-100">
+          <div className="md:hidden py-6 border-t border-gray-200">
             <nav className="space-y-2">
               {navItems.map((item) => (
                 <Link
                   key={item.key}
                   href={item.href}
-                  className="block py-3 px-2 text-gray-700 hover:text-orange-500 hover:bg-orange-50 rounded-lg font-medium transition-all duration-200"
+                  className="block py-4 px-3 text-slate-700 hover:text-slate-900 hover:bg-gray-100 rounded-xl font-medium text-lg transition-all duration-200"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {t(item.key)}
@@ -91,13 +91,13 @@ export default function Header() {
             </nav>
             
             {/* Mobile Language Switcher & Get Quote */}
-            <div className="mt-4 pt-4 border-t border-gray-100 space-y-3">
-              <div className="px-2">
+            <div className="mt-6 pt-6 border-t border-gray-200 space-y-4">
+              <div className="px-3">
                 <LanguageSwitcher />
               </div>
               <Link
-                href={`/${currentLocale}/contact`}
-                className="block w-full text-center py-3 px-4 bg-orange-500 text-white font-medium rounded-lg hover:bg-orange-600 transition-colors duration-200"
+                href="/contact"
+                className="block w-full text-center py-4 px-6 bg-green-500 text-white font-semibold rounded-xl hover:bg-green-600 transition-all duration-200 shadow-md"
                 onClick={() => setIsMenuOpen(false)}
               >
                 {t('getQuote')}
