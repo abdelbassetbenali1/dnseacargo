@@ -305,5 +305,72 @@
     "switch": "Changer de Langue",
     "current": "Langue Actuelle",
     "available": "Langues Disponibles"
+  },
+  "testimonials": {
+    "badge": "TÉMOIGNAGES",
+    "title": "Ce que disent nos clients",
+    "subtitle": "Fait confiance par les entreprises du monde entier pour des solutions d'expédition fiables",
+    "clients": {
+      "ahmed": {
+        "name": "Ahmed Al Rashid",
+        "position": "PDG, Global Trade Company",
+        "country": "AE",
+        "testimonial": "DEREA AL NUHAS est notre partenaire logistique de confiance depuis plus de 5 ans. Leur fiabilité et leur service professionnel nous ont aidés à développer nos activités à l'échelle mondiale."
+      },
+      "fatima": {
+        "name": "Fatima Benali",
+        "position": "Directrice des Importations, Atlas Trading",
+        "country": "MA",
+        "testimonial": "Qualité de service exceptionnelle et prix compétitifs. Ils gèrent les routes commerciales Maroc-Europe avec une efficacité et une attention remarquables."
+      },
+      "omar": {
+        "name": "Omar Hassan",
+        "position": "Directeur Logistique, Nile Exports",
+        "country": "EG",
+        "testimonial": "Leur expertise en dédouanement nous a fait économiser d'innombrables heures et coûts. DEREA AL NUHAS comprend les complexités du commerce international."
+      },
+      "sarah": {
+        "name": "Sarah Khalil",
+        "position": "Directrice des Opérations, Cedar Logistics",
+        "country": "LB",
+        "testimonial": "Équipe professionnelle avec une connaissance approfondie des routes de transport méditerranéennes. Ils livrent constamment à temps et dans le budget."
+      },
+      "youssef": {
+        "name": "Youssef Ben Salem",
+        "position": "Coordinateur Export, Carthage Trading",
+        "country": "TN",
+        "testimonial": "Services d'entreposage et de distribution exceptionnels. Leur installation en Tunisie est devenue partie intégrante de notre chaîne d'approvisionnement."
+      },
+      "khalid": {
+        "name": "Khalid Al Mansouri",
+        "position": "Directeur Supply Chain, Gulf Industries",
+        "country": "SA",
+        "testimonial": "L'expertise de DEREA AL NUHAS dans la manipulation de marchandises sensibles et leur engagement envers les normes de sécurité sont inégalés dans la région."
+      },
+      "amina": {
+        "name": "Amina Bouazza",
+        "position": "Directrice Commerce, Sahara Imports",
+        "country": "DZ",
+        "testimonial": "Leur service porte-à-porte de l'Algérie vers les marchés internationaux a considérablement simplifié nos opérations."
+      },
+      "mohammed": {
+        "name": "Mohammed Al Thani",
+        "position": "Directeur des Achats, Doha Enterprises",
+        "country": "QA",
+        "testimonial": "Partenaire fiable pour nos opérations basées au Qatar. Leur plateforme technologique offre une excellente visibilité sur les expéditions."
+      },
+      "layla": {
+        "name": "Layla Al-Sabah",
+        "position": "Coordinatrice Logistique, Kuwait Trading House",
+        "country": "KW",
+        "testimonial": "Service rapide et efficace avec des tarifs compétitifs. Ils comprennent les exigences uniques du marché koweïtien."
+      },
+      "nadia": {
+        "name": "Nadia Al-Zahra",
+        "position": "Responsable Opérations, Jordan Commerce Group",
+        "country": "JO",
+        "testimonial": "Leur expertise en logistique transfrontalière et en conformité réglementaire a été inestimable pour notre expansion régionale."
+      }
+    }
   }
 }

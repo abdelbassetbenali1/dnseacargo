@@ -3,6 +3,7 @@
 import { useTranslations, useLocale } from 'next-intl';
 import { Link } from '@/i18n/navigation';
 import { useState } from 'react';
+import Image from 'next/image';
 import { Menu, X } from 'lucide-react';
 import LanguageSwitcher from './LanguageSwitcher';
 import { type Locale } from '../lib/i18n';
@@ -20,14 +21,19 @@ export default function Header() {
 
   return (
     <header className="bg-gray-50 sticky top-0 z-50 border-b border-gray-100">
-      <div className="max-w-7xl mx-auto px-4 lg:px-8">
+      <div className="max-w-7xl mx-auto py-3 px-4 lg:px-8">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-3">
-            <div className="w-12 h-12 bg-slate-800 rounded-xl flex items-center justify-center">
-              <span className="text-white font-bold text-lg">Dera Al Nuhas</span>
+            <div className="w-30 h-24 relative">
+              <Image
+                src="/logo.png"
+                alt="DNS Sea Cargo Logo"
+                fill
+                className="object-contain"
+                priority
+              />
             </div>
-            
           </Link>
 
           {/* Desktop Navigation */}

@@ -5,8 +5,8 @@ import Hero from "@/components/home/Hero";
 import ServicesOverview from "@/components/home/ServicesOverview";
 import BigBanner from "@/components/home/BigBanner";
 import Strengths from "@/components/home/Strengths";
-import Stats from "@/components/home/Stats";
 import Testimonial from "@/components/home/Testimonial";
+import FAQ from "@/components/home/FAQ";
 import CTA from "@/components/home/CTA";
 
 // Generate static params for all supported locales
@@ -32,8 +32,9 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
       <ServicesOverview />
       <BigBanner />
       <Strengths />
-      <Stats />
+    
       <Testimonial />
+      <FAQ />
       <CTA />
     </main>
   );

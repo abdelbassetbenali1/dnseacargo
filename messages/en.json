@@ -56,9 +56,30 @@
     "ctaButton": "Calculate Now"
   },
   "services": {
-    "title": "Our Services",
-    "subtitle": "We offer a comprehensive range of logistics services",
+    "badge": "Our Services",
+    "title": "Comprehensive Logistics Solutions",
+    "subtitle": "We offer a comprehensive range of logistics services designed to meet all your shipping and cargo needs",
     "viewAll": "View All Services",
+    "international": {
+      "title": "International Shipping",
+      "description": "We manage global shipping from origin to destination, providing both air and sea freight options to suit your timeline and budget."
+    },
+    "lastMile": {
+      "title": "Last-Mile Delivery", 
+      "description": "Our reliable last-mile delivery service ensures that your products reach the final destination efficiently, providing tracking and updates."
+    },
+    "warehousing": {
+      "title": "Warehousing & Distribution",
+      "description": "Our strategically located warehouses ensure fast, secure storage and distribution of your products. With flexible storage options."
+    },
+    "supply": {
+      "title": "Supply Optimization",
+      "description": "Our expert team analyzes and improves your supply chain for maximum efficiency and cost savings."
+    },
+    "customs": {
+      "title": "Customs Clearance",
+      "description": "We navigate the complexities of customs regulations and procedures to ensure smooth clearance."
+    },
     "overview": {
       "premiumService": "Premium Service",
       "exploreService": "Explore Service",
@@ -283,5 +304,92 @@
     "switch": "Switch Language",
     "current": "Current Language",
     "available": "Available Languages"
+  },
+  "faq": {
+    "title": "Questions?",
+    "subtitle": "Glad you asked",
+    "international": {
+      "question": "Do you handle international shipments?",
+      "answer": "Yes, we offer international shipping to a wide range of countries. Please check our shipping policy or contact customer support for specific destination availability."
+    },
+    "services": {
+      "question": "What types of shipping services do you offer?",
+      "answer": "We provide several shipping options including standard, expedited, and express services. The available options may vary depending on your location and the items ordered."
+    },
+    "tracking": {
+      "question": "Can I track my shipment?",
+      "answer": "Absolutely. Once your order is shipped, you will receive a tracking number via email. You can use this to monitor your shipment's progress in real time."
+    },
+    "delivery": {
+      "question": "How long does delivery take?",
+      "answer": "Delivery times vary depending on the shipping method and destination. Typically, international orders arrive within 5 to 15 business days. Express options may offer faster delivery."
+    }
+  },
+  "testimonials": {
+    "badge": "TESTIMONIALS",
+    "title": "What Our Clients Say",
+    "subtitle": "Trusted by businesses worldwide for reliable shipping solutions",
+    "clients": {
+      "ahmed": {
+        "name": "Ahmed Al-Rashid",
+        "position": "CEO, Global Trading Co.",
+        "country": "AE",
+        "testimonial": "DEREA AL NUHAS has been our trusted logistics partner for over 5 years. Their reliability and professional service have helped us expand our business globally."
+      },
+      "fatima": {
+        "name": "Fatima Benali",
+        "position": "Import Manager, Atlas Commerce",
+        "country": "MA",
+        "testimonial": "Exceptional service quality and competitive pricing. They handle our Morocco-Europe trade routes with remarkable efficiency and care."
+      },
+      "omar": {
+        "name": "Omar Hassan",
+        "position": "Logistics Director, Nile Exports",
+        "country": "EG",
+        "testimonial": "Their customs clearance expertise has saved us countless hours and costs. DEREA AL NUHAS understands the complexities of international trade."
+      },
+      "sarah": {
+        "name": "Sarah Khalil",
+        "position": "Operations Manager, Cedar Logistics",
+        "country": "LB",
+        "testimonial": "Professional team with deep knowledge of Mediterranean shipping routes. They consistently deliver on time and within budget."
+      },
+      "youssef": {
+        "name": "Youssef Ben Salem",
+        "position": "Export Coordinator, Carthage Trading",
+        "country": "TN",
+        "testimonial": "Outstanding warehousing and distribution services. Their Tunis facility has become an integral part of our supply chain."
+      },
+      "khalid": {
+        "name": "Khalid Al-Mansouri",
+        "position": "Supply Chain Manager, Gulf Industries",
+        "country": "SA",
+        "testimonial": "DEREA AL NUHAS expertise in handling sensitive cargo and their commitment to safety standards is unmatched in the region."
+      },
+      "amina": {
+        "name": "Amina Bouazza",
+        "position": "Trade Manager, Sahara Imports",
+        "country": "DZ",
+        "testimonial": "Their door-to-door service from Algeria to international markets has significantly streamlined our operations."
+      },
+      "mohammed": {
+        "name": "Mohammed Al-Thani",
+        "position": "Procurement Director, Doha Enterprises",
+        "country": "QA",
+        "testimonial": "Reliable partner for our Qatar-based operations. Their technology platform provides excellent shipment visibility."
+      },
+      "layla": {
+        "name": "Layla Al-Sabah",
+        "position": "Logistics Coordinator, Kuwait Trading House",
+        "country": "KW",
+        "testimonial": "Fast and efficient service with competitive rates. They understand the unique requirements of the Kuwaiti market."
+      },
+      "nadia": {
+        "name": "Nadia Al-Zahra",
+        "position": "Operations Head, Jordan Commerce Group",
+        "country": "JO",
+        "testimonial": "Their expertise in cross-border logistics and regulatory compliance has been invaluable for our regional expansion."
+      }
+    }
   }
 }

@@ -115,12 +115,7 @@ export default function Footer() {
           
           {/* Left Side - Logo and Copyright */}
           <div className={`flex items-center gap-8 ${isRTL ? 'flex-row-reverse' : ''}`}>
-            {/* Logo */}
-            <div className="flex items-center gap-3">
-              <div className="text-2xl font-bold text-slate-800">
-                <span className="text-green-400">U</span>thao
-              </div>
-            </div>
+         
             
             {/* Copyright */}
             <div className="text-sm text-gray-600">
