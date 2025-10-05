@@ -25,9 +25,9 @@ export default function Header() {
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-3">
             <div className="w-12 h-12 bg-slate-800 rounded-xl flex items-center justify-center">
-              <span className="text-white font-bold text-lg">DNS</span>
+              <span className="text-white font-bold text-lg">Dera Al Nuhas</span>
             </div>
-            <span className="text-2xl font-bold text-slate-800">Sea Cargo</span>
+            
           </Link>
 
           {/* Desktop Navigation */}
