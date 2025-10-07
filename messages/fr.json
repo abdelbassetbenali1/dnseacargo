@@ -213,31 +213,46 @@
     }
   },
   "contact": {
+    "badge": "Contactez-Nous",
     "title": "Contactez-Nous",
-    "subtitle": "Entrez en contact avec notre équipe",
+    "subtitle": "Nous sommes là pour vous aider avec tous vos besoins logistiques. Contactez-nous aujourd'hui pour un devis gratuit.",
     "getInTouch": "Entrer en Contact",
     "address": "Adresse",
     "phone": "Téléphone",
     "email": "Email",
     "hours": "Heures d'Ouverture",
     "form": {
+      "title": "Obtenez un Devis Gratuit",
+      "description": "Remplissez le formulaire ci-dessous et nous vous contacterons dans les 24 heures.",
       "name": "Nom Complet",
+      "namePlaceholder": "Entrez votre nom complet",
       "email": "Adresse Email",
+      "emailPlaceholder": "exemple@email.com",
       "phone": "Numéro de Téléphone",
+      "phonePlaceholder": "+971 50 123 4567",
       "company": "Nom de l'Entreprise",
-      "service": "Service d'Intérêt",
-      "message": "Message",
-      "send": "Envoyer le Message",
+      "service": "Service Requis",
+      "selectService": "Sélectionnez un service",
+      "message": "Détails de la Demande",
+      "messagePlaceholder": "Parlez-nous de vos besoins d'expédition...",
+      "send": "Envoyer la Demande",
       "sending": "Envoi en cours...",
       "success": "Message envoyé avec succès !",
       "error": "Échec de l'envoi du message. Veuillez réessayer."
     },
     "info": {
-      "address": "123 Rue du Port, District Maritime, Ville 12345",
-      "phone": "+1 (555) 123-4567",
+      "title": "Informations de Contact",
+      "hoursTitle": "Heures d'Ouverture",
+      "address": "Zone Industrielle de Ras Al Khor - Zone Industrielle de Ras Al Khor 2 - Dubaï - Émirats Arabes Unis",
+      "phone": "+971521554549",
       "email": "info@dnseacargo.com",
-      "hours": "Lundi - Vendredi : 8h00 - 18h00"
+      "hours": "Dimanche - Jeudi : 8h00 - 18h00, Samedi : 9h00 - 14h00"
     },
+    "map": {
+      "title": "Notre Emplacement",
+      "placeholder": "Carte Interactive"
+    }
+  },
     "logistics": {
       "title": "Services Logistiques",
       "description": "Solutions logistiques intégrées et gestion de la chaîne d'approvisionnement",
